@@ -12,7 +12,7 @@
     <div id="love-counter"  class="mycontainer">Korkut'un Tuğçe'ye olan aşkı bu sayfa acildigindan beri şu kadar kez arttı:</div>
     <div id="counter" class="item"></div>
   </h1>
-    <div id="frame" class="myst" class="mycontainer"></div> 
+    <div id="frame" class="myst" class="grid-display"></div> 
     <h1>
     <div id="love-counter-tw"  class="mycontainer">Korkut'un Tuğçe'ye olan aşkının şu anki sayacı: </div>
     <div id="counter-two" class="item"></div>
@@ -24,11 +24,11 @@
   </body>
   <style>
   html {
-  font-size: 5px; // or any value you want!
+  font-size: 10px; // or any value you want!
 }
   .item {
-    max-width: 113px;
-    min-width: 106px;
+    max-width: 21em;
+    min-width: 21em;
   }
 .mycontainer {
   width:100%;
@@ -40,6 +40,10 @@
   top: 7px;
   right: 0;
 }
+    .grid-containee {
+      display: grid;
+      grid-template-columns: auto;
+    }
    </style>
  <script>
 $("#getw").on( "click", function() {
