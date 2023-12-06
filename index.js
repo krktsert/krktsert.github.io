@@ -204,6 +204,7 @@ let consoleOne = document.getElementById("Console1");
 let myconsoleOne = document.getElementById("myconsole");
 
 let hT = document.createElement("Div")
+hT.id = "divhT"
 hT.innerHTML = ""
 hT.className = "item"
 hT.append(displayT)
