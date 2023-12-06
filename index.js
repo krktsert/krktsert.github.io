@@ -13,10 +13,16 @@ function drawLetterT(display, x, y) {
   for (let i = 0; i < height; i++) {
     display[i][x] = '😘';
   }
+  for (let i = 0; i < height; i++) {
+    display[i][6] = '😘';
+  }
 
   // Draw the horizontal line of the 'T'
   for (let j = 0; j < width; j++) {
     display[y][j] = '😘';
+  }
+  for (let j = 0; j < width; j++) {
+    display[1][j] = '😘';
   }
 }
 
@@ -34,15 +40,24 @@ function drawLetterU(display, x, y) {
   for (let i = 0; i < height - 1; i++) {
     display[i][x] = '😘';
   }
+  for (let i = 0; i < height - 1; i++) {
+    display[i][1] = '😘';
+  }
 
   // Draw the bottom horizontal line of the 'U'
   for (let j = 0; j < width; j++) {
     display[height - 1][j] = '😘';
   }
+  for (let j = 0; j < width; j++) {
+    display[height - 2][j] = '😘';
+  }
 
   // Draw the right vertical line of the 'U'
   for (let k = 0; k < height - 1; k++) {
     display[k][x + width - 1] = '😘';
+  }
+  for (let k = 0; k < height - 1; k++) {
+    display[k][x + width - 2] = '😘';
   }
 }
 
@@ -53,9 +68,15 @@ function drawLetterG(display, x, y) {
   for (let i = 2; i < height; i++) {
     display[i][x] = '😘';
   }
+  for (let i = 2; i < height; i++) {
+    display[i][1] = '😘';
+  }
 
   for (let i = 0; i < height; i++) {
     display[2][i] = '😘';
+  }
+  for (let i = 0; i < height; i++) {
+    display[3][i] = '😘';
   }
 
   for (let i = 4; i < 8; i++) {
@@ -65,13 +86,22 @@ function drawLetterG(display, x, y) {
   for (let i = 0; i < width; i++) {
     display[12][i] = '😘';
   }
+  for (let i = 0; i < width; i++) {
+    display[11][i] = '😘';
+  }
 
   for (let i = 6; i < width; i++) {
     display[i][12] = '😘';
   }
+  for (let i = 6; i < width; i++) {
+    display[i][11] = '😘';
+  }
 
   for (let i = 6; i < width; i++) {
     display[6][i] = '😘';
+  }
+  for (let i = 6; i < width; i++) {
+    display[7][i] = '😘';
   }
 }
 
@@ -82,13 +112,22 @@ function drawLetterC(display, x, y) {
   for (let i = 0; i < width; i++) {
     display[x][i] = '😘';
   }
+  for (let i = 0; i < width; i++) {
+    display[1][i] = '😘';
+  }
 
   for (let i = 0; i < width -2; i++) {
-    display[i][x] = '😘';
+    display[i][0] = '😘';
+  }
+  for (let i = 0; i < width -2; i++) {
+    display[i][1] = '😘';
   }
 
   for (let i = 0; i < width; i++) {
     display[height - 3][i] = '😘';
+  }
+  for (let i = 0; i < width; i++) {
+    display[height - 4][i] = '😘';
   }
 
   display[11][8] = '😘';
@@ -106,17 +145,29 @@ function drawLetterE(display, x, y) {
   for (let i = 0; i < width; i++) {
     display[x][i] = '😘';
   }
+  for (let i = 0; i < width; i++) {
+    display[1][i] = '😘';
+  }
 
   for (let i = 0; i < height; i++) {
     display[i][x] = '😘';
+  }
+  for (let i = 0; i < height; i++) {
+    display[i][1] = '😘';
   }
 
   for (let i = 0; i < width -2; i++) {
     display[5][i] = '😘';
   }
+  for (let i = 0; i < width -2; i++) {
+    display[6][i] = '😘';
+  }
 
   for (let i = 0; i < width; i++) {
     display[12][i] = '😘';
+  }
+  for (let i = 0; i < width; i++) {
+    display[11][i] = '😘';
   }
 
 }
@@ -177,12 +228,21 @@ hE.innerHTML = ""
 hE.className = "item"
 hE.append(displayE)
 
-//display full love
+let br1 = document.createElement("br")
+let br2 = document.createElement("br")
+let br3 = document.createElement("br")
+let br4 = document.createElement("br")
+
 frame.append(hT)
+frame.append(br1)
 frame.append(hU)
+frame.append(br2)
 frame.append(hG)
+frame.append(br3)
 frame.append(hC)
+frame.append(br4)
 frame.append(hE)
+
 
 var seconds = 0;
 
