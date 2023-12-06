@@ -263,3 +263,6 @@ function incrementSeconds(){
 }
 
 var cancel = setInterval(incrementSeconds, 1000);
+
+$("#widthinfo").text("Window width: " + $( window ).width() + " frame width:" + $( "#frame" ).width() + "divT size:" + $( "#divhT" ).width())
+$( window ).width()
