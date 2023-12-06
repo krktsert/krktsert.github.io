@@ -177,6 +177,7 @@ hE.innerHTML = ""
 hE.className = "item"
 hE.append(displayE)
 
+//display full love
 frame.append(hT)
 frame.append(hU)
 frame.append(hG)
