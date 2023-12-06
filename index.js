@@ -136,23 +136,49 @@ const displayE = Array.from({ length: 13 }, () => Array(13).fill('💋'));
 
 
 // Draw the letter 'T' at position (5, 5)
-// drawLetterT(displayT, 5, 0);
+drawLetterT(displayT, 5, 0);
 // printDisplay(displayT);
-// drawLetterU(displayU, 0, 0);
+drawLetterU(displayU, 0, 0);
 // printDisplay(displayU);
-// drawLetterG(displayG, 0, 0);
+drawLetterG(displayG, 0, 0);
 // printDisplay(displayG);
-// drawLetterC(displayC, 0, 0);
+drawLetterC(displayC, 0, 0);
 // printDisplay(displayC);
-// drawLetterE(displayE, 0, 0);
+drawLetterE(displayE, 0, 0);
 // printDisplay(displayE);
 
 
-// Fill the empty space with 💋
-// fillEmptySpace(display);
-
-
-
+let frame = document.getElementById("frame");
 let consoleOne = document.getElementById("Console1");
-consoleOne.innerHTML = ""
-consoleOne.append(displayE)
+let myconsoleOne = document.getElementById("myconsole");
+
+let hT = document.createElement("Div")
+hT.innerHTML = ""
+hT.className = "item"
+hT.append(displayT)
+
+let hU = document.createElement("Div")
+hU.innerHTML = ""
+hU.className = "item"
+hU.append(displayU)
+
+let hG = document.createElement("Div")
+hG.innerHTML = ""
+hG.className = "item"
+hG.append(displayG)
+
+let hC = document.createElement("Div")
+hC.innerHTML = ""
+hC.className = "item"
+hC.append(displayC)
+
+let hE = document.createElement("Div")
+hE.innerHTML = ""
+hE.className = "item"
+hE.append(displayE)
+
+frame.append(hT)
+frame.append(hU)
+frame.append(hG)
+frame.append(hC)
+frame.append(hE)
