@@ -1,55 +1,39 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/normalize.css">
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-  </head>
-  
-  <body>
-  <h1>
-    <div id="love-counter"  class="mycontainer">Korkut'un Tuğçe'ye olan aşkı bu sayfa acildigindan beri şu kadar kez arttı:</div>
-    <div id="counter" class="mycontainer"></div>
-  </h1>
-    <div id="frame" class="myst grid-container"></div> 
+</head>
+
+<body>
     <h1>
-    <div id="love-counter-tw"  class="mycontainer">Korkut'un Tuğçe'ye olan aşkının şu anki sayacı: </div>
-    <div id="counter-two" class="mycontainer"></div>
+        <div id="love-counter" class="mycontainer">Korkut'un Tuğçe'ye olan aşkı bu sayfa acildigindan beri şu kadar kez
+            arttı:</div>
+        <div id="counter" class="mycontainer"></div>
+    </h1>
+    <h1>
+        <div id="love-counter-tw" class="mycontainer">Korkut'un Tuğçe'ye olan aşkının şu anki sayacı: </div>
+        <div id="counter-two" class="mycontainer"></div>
+    </h1>
 
-      <div id="widthinfo"> </div> 
-      <button id="getw">GetWidth</button>
-  </h1>
-    <script src="index.js"></script>
-  </body>
-  <style>
-  html {
-  font-size: 0.1em; // or any value you want!
-  }
-.mycontainer {
-  width:100%;
-  font-size: 7em;
-}
-.myst {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Black_colour.jpg/1200px-Black_colour.jpg);
-  background-repeat: repeat;
-  width: 75%; /*you must give an actual width here instead of auto*/
-  min-width: 108em;
-  max-width: 115em;
-  top: 7px;
-  right: 0;
-}
+    <div id="grid-frame" class="grid-container"></div>
+
+    <div id="widthinfo"> </div>
+    <button id="getw">GetWidth</button>
+    <script src="inded.js"></script>
+</body>
+<style>
     .grid-container {
-      display: grid;
-      grid-template-columns: auto;
+        background-color: black;
+        display: grid;
+        width: fit-content;
+        grid-template-columns: repeat(13, auto);
     }
-   </style>
- <script>
-$("#getw").on( "click", function() {
-console.log("hi");
-  $("#widthinfo").text("Window width: " + $( window ).width() + " frame width:" + $( "#frame" ).width() + "divT size:" + $( "#divhT" ).width())
-$( window ).width() });
-  
-
-</script>
+    .grid-cell {
+        display: inline-block;
+        width: fit-content;
+    }
+</style>
 </html>
