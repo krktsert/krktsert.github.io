@@ -246,12 +246,20 @@ frame.append(hE)
 
 var seconds = 0;
 
+var d = new Date(2023, 10, 3, 11, 40, 0);
+var dNow = new Date();
+var secondsSince =Math.round( (dNow - d) / 1000 );
+
 let counter = document.getElementById("counter")
+let counterTwo = document.getElementById("counter-two")
 counter.innerHTML = seconds+1
+counterTwo.innerHTML = secondsSince
 
 function incrementSeconds(){ 
   seconds+=1;
-  counter.innerHTML = seconds  
+  secondsSince += 1;
+  counter.innerHTML = seconds;
+  counterTwo.innerHTML = secondsSince;
 }
 
 var cancel = setInterval(incrementSeconds, 1000);
