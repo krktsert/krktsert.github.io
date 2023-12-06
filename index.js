@@ -183,3 +183,15 @@ frame.append(hU)
 frame.append(hG)
 frame.append(hC)
 frame.append(hE)
+
+var seconds = 0;
+
+let counter = document.getElementById("counter")
+counter.innerHTML = seconds+1
+
+function incrementSeconds(){ 
+  seconds+=1;
+  counter.innerHTML = seconds  
+}
+
+var cancel = setInterval(incrementSeconds, 1000);
