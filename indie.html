@@ -18,6 +18,7 @@
     <div id="counter-two" class="item"></div>
 
       <div id="widthinfo"> </div> 
+      <button id="getw">GetWidth</button>
   </h1>
     <script src="index.js"></script>
   </body>
@@ -40,8 +41,12 @@
   right: 0;
 }
    </style>
-  <script>
-$("#widthinfo").text("Window width: " + $( window ).width() + " frame width:" + $( "#frame" ).width() + "divT size:" + $( "#divhT" ).width())
-$( window ).width()
+ <script>
+$("#getw").on( "click", function() {
+console.log("hi");
+  $("#widthinfo").text("Window width: " + $( window ).width() + " frame width:" + $( "#frame" ).width() + "divT size:" + $( "#divhT" ).width())
+$( window ).width() });
+  
+
 </script>
 </html>
